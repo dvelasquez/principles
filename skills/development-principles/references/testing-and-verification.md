@@ -18,9 +18,9 @@ Open this file when the decision is what to test, how to test it, what to do wit
 
 ## Never lower the bar of a test
 
-- **Statement:** When a test fails, fix the code or the test setup. What the test demands is not weakened.
-- **Why:** A test edited to match the code stops protecting, and "green" then hides a regression.
-- **Applies when:** a test fails. Who may change an expected value is an open conflict, see `open-conflicts.md`.
+- **Statement:** When a test fails, fix the code or the test setup. What the test demands is not weakened. The ticket is the human's acceptance of a behavior change: aligning an expected value with what the ticket orders is the agent's decision. Making a test stop checking something the ticket does not mention is the human's decision, and the agent escalates.
+- **Why:** A test edited to match the code stops protecting, and "green" then hides a regression. The human accepts behavior changes when defining the ticket, so a change the ticket orders needs no second permission.
+- **Applies when:** a test fails or an expected value must change.
 - **Sources:** practice.
 
 ## A test must be able to fail

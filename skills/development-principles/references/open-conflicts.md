@@ -4,12 +4,6 @@ Open this file when a decision touches two principles that point in different di
 
 ## Conflicts between principles
 
-### Who authorizes changing what a test expects
-
-- **Position A, Never lower the bar of a test:** the expected result changes only if the human accepted the behavior change.
-- **Position B, Never lower the bar of a test:** the ticket is the oracle; the agent aligns the assertion with what the ticket orders without asking; weakening the bar needs a human, and in authorization tickets it is forbidden.
-- **Status:** unresolved; an agent escalates and does not pick a side.
-
 ### Prepare for change only when named, versus convert hard-coded values when touched
 
 - **Position A, You Aren't Gonna Need It, with a cheap seam:** no configuration without a real, named and near second case.
