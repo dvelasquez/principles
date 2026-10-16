@@ -1,6 +1,6 @@
 ---
 name: development-principles
-description: Use when implementing or refining work and you meet a decision that the ticket, the existing code and the project's rules do not answer. Applies development principles to reach an obvious answer, or escalates when there is none.
+description: Use in three moments. (1) Implementing or refining work and you meet a decision that the ticket, the existing code and the project's rules do not answer. (2) Reviewing code or a pull request. (3) Writing or reviewing an architecture decision record. Applies development principles to reach an obvious answer or to find gross contradictions, and escalates when there is no obvious answer.
 ---
 
 # Development principles
@@ -11,7 +11,7 @@ description: Use when implementing or refining work and you meet a decision that
 - A **rule** is checked without judgment: yes or no. Rules live in each project as scripts, not here.
 - Every principle here explains why, and each project derives its own rules from it.
 
-## Procedure
+## Deciding during implementation
 
 1. **Is it a fact or a decision?** A fact, such as a version, a path or an existing convention, is found in the code, the docs or the live system. Find it and continue. Do not escalate a fact.
 2. **A decision:** open the area file that matches it. Open more than one if the decision spans areas.
@@ -19,7 +19,17 @@ description: Use when implementing or refining work and you meet a decision that
 4. **Obvious answer:** proceed, and name the principle that decided it in the pull request.
 5. **No obvious answer, or the case touches `references/open-conflicts.md`:** escalate. Include the question, the principles you consulted, and why they did not decide.
 
-The procedure follows one criterion: after applying the principles, check whether there is an obvious answer; if there is none, escalate.
+The procedure comes from the owner's own criterion: after applying the principles, check whether there is an obvious answer; if there is none, escalate.
+
+## Reviewing code or an architecture decision record
+
+The review looks for **gross contradictions** only. A gross contradiction is a change that does the opposite of a principle whose "Applies when" matches, with no recorded reason. A different but defensible decision is not a contradiction: two competent people may decide differently and both comply. Rules are not reviewed here; the project's scripts check them.
+
+1. **List the decisions** the change makes. For code, start from the principles cited in the pull request, then look for decisions with no cited principle.
+2. **Open the matching area files** and compare each decision against the principles that apply.
+3. **For an architecture decision record**, also check that every principle the decision breaks is named as an explicit exception, with why it causes no harm.
+4. **Report** each gross contradiction with the principle name, where it happens, and what the change does instead. If there are none, say so in one line.
+5. **A contradiction that touches `references/open-conflicts.md`** is escalated, not reported as a defect.
 
 ## Areas
 
