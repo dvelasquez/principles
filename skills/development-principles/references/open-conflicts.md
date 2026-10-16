@@ -4,12 +4,6 @@ Open this file when a decision touches two principles that point in different di
 
 ## Conflicts between principles
 
-### Blocking: what triggers an escalation
-
-- **Position A, The human is at both ends of the funnel:** the human owns what is irreversible; the agent acts on what is reversible and delivers receipts.
-- **Position B, Escalate by whose question it is:** irreversibility is withdrawn as a pause criterion; a data patch can be irreversible and have nothing to decide. What separates executing from asking is whose question it is, weighed together with measured confidence.
-- **Status:** unresolved; an agent escalates and does not pick a side. The factory depends on this answer.
-
 ### Who authorizes changing what a test expects
 
 - **Position A, Never lower the bar of a test:** the expected result changes only if the human accepted the behavior change.

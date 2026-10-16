@@ -4,16 +4,16 @@ Open this file when the decision is about escalating, scope, ticket state, retri
 
 ## The human is at both ends of the funnel
 
-- **Statement:** The person defines what to build and promotes to production. Everything in between belongs to the machine, which delivers receipts.
-- **Why:** Those are the two irreplaceable judgments. Asking permission before each reversible step slows the work without reducing risk; the rest turned the human into the runtime.
-- **Applies when:** agents develop without supervision. Its irreversibility clause is the blocking conflict in `open-conflicts.md`.
+- **Statement:** The person defines what to build and executes the named irreversible actions, such as promoting to production or destroying data. Everything in between belongs to the machine, which delivers receipts.
+- **Why:** Those are the two irreplaceable judgments. Asking permission before each reversible step slows the work without reducing risk; the rest turned the human into the runtime. Irreversibility does not decide whose question it is, but it raises the cost of an obvious answer that turns out wrong: a reversible mistake is corrected later from its receipt, an irreversible one cannot be.
+- **Applies when:** agents develop without supervision. Each project keeps its closed list of irreversible actions as a rule, so a script can check it.
 - **Sources:** practice.
 
 ## Escalate by whose question it is
 
-- **Statement:** The agent finds facts by itself. How to execute what is defined belongs to the agent. What it should be belongs to the human. What is already authorized is done without asking twice.
-- **Why:** A factual question spends the human's attention on something the agent could look up. In one production agent loop, pausing by risk produced 95 % approvals without a decision, with the same result as not pausing.
-- **Applies when:** agents develop without supervision. Part of the blocking conflict in `open-conflicts.md`.
+- **Statement:** The agent finds facts by itself. How to execute what is defined belongs to the agent. What it should be belongs to the human. What is already authorized is done without asking twice. The test: if applying the principles gives an obvious answer, the question was about execution and the agent proceeds; if it gives none, the question belongs to the human and the agent escalates.
+- **Why:** A factual question spends the human's attention on something the agent could look up. In one production agent loop, pausing by risk produced 95 % approvals without a decision, with the same result as not pausing. Risk and irreversibility do not trigger escalation; they are handled by the named irreversible actions in "The human is at both ends of the funnel".
+- **Applies when:** agents develop without supervision.
 - **Sources:** practice.
 
 ## Receipts by consequence instead of prior permission
