@@ -4,12 +4,6 @@ Open this file when a decision touches two principles that point in different di
 
 ## Conflicts between principles
 
-### Prepare for change only when named, versus convert hard-coded values when touched
-
-- **Position A, You Aren't Gonna Need It, with a cheap seam:** no configuration without a real, named and near second case.
-- **Position B, Hard-coded values become configuration when touched:** when a piece is touched, its hard-coded values move to configuration with the current value as default, without a second case. This position is scoped to pieces meant to run in more than one project.
-- **Status:** unresolved; an agent escalates and does not pick a side.
-
 ### Receipts versus human reading
 
 - **Position A, Receipts by consequence instead of prior permission:** protection comes from reversibility, a visual receipt and later correction; the receipt is triggered by consequence.

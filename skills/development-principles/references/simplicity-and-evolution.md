@@ -18,17 +18,10 @@ Open this file when the decision is whether to add a dependency, an abstraction,
 
 ## You Aren't Gonna Need It, with a cheap seam
 
-- **Statement:** Build for the case that exists. A shared abstraction or a seam is born only when the variation is real, concrete and near. If the change and its arrival cannot be named, preparing for it is speculation.
-- **Why:** Speculative infrastructure costs today and rarely pays. A premature abstraction fixes the wrong shape and hides defects that the first future user pays for. Preparation for a named change pays without discussion.
+- **Statement:** Build for the case that exists. A shared abstraction, a seam or a configuration value is born only when the variation is real, concrete and near. If the change and its arrival cannot be named, preparing for it is speculation. A piece that already runs in more than one project has its second case: when it is touched for any reason, its hard-coded values move to configuration, with a default equal to the current value.
+- **Why:** Speculative infrastructure costs today and rarely pays. A premature abstraction fixes the wrong shape and hides defects that the first future user pays for. Preparation for a named change pays without discussion, and moving values when a shared piece is touched stops portability debt from growing without a large project.
 - **Applies when:** always. The threshold for "real" is an open parameter difference, see `open-conflicts.md`.
-- **Sources:** Kent Beck and Ron Jeffries, Extreme Programming; Martin Fowler, *Refactoring* (rule of three); Michael Feathers, seams.
-
-## Hard-coded values become configuration when touched
-
-- **Statement:** When a piece is modified for any reason, its hand-written values move to configuration, with a default equal to the current value.
-- **Why:** Portability debt stops growing without paying for a large project.
-- **Applies when:** the piece is meant to run in more than one project or environment. Conflicts with You Aren't Gonna Need It, see `open-conflicts.md`.
-- **Sources:** Robert C. Martin, the Boy Scout Rule; *The Twelve-Factor App*, configuration.
+- **Sources:** Kent Beck and Ron Jeffries, Extreme Programming; Martin Fowler, *Refactoring* (rule of three); Michael Feathers, seams; Robert C. Martin, the Boy Scout Rule; *The Twelve-Factor App*, configuration.
 
 ## Cheap and reversible first, structural later
 

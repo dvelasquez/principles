@@ -2,7 +2,7 @@
 
 A set of development principles, packaged as an Agent Skill. Agents load them when a ticket, the code and the project's rules leave a decision unanswered. If the principles give an obvious answer, the agent proceeds; if not, it escalates.
 
-The 72 principles were extracted from real projects, then consolidated and checked for sources. Each principle cites its reference in the literature, or "practice" when it comes from repeated practice in those projects.
+The principles were extracted from real projects, then consolidated and checked for sources. Each principle cites its reference in the literature, or "practice" when it comes from repeated practice in those projects.
 
 ## Install
 
