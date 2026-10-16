@@ -11,8 +11,8 @@ Open this file when the decision is whether to add a dependency, an abstraction,
 
 ## Use the platform, choose boring technology: the smallest new surface wins
 
-- **Statement:** Do not install a dependency for something the platform or an installed dependency already solves. Prefer one more route inside what exists over a new service, domain, container or dependency.
-- **Why:** Every dependency and every new surface is something more to operate, secure and maintain, plus an exit cost. A small team cannot pay for complexity it does not use.
+- **Statement:** Do not install a dependency for something the platform or an installed dependency already solves. Prefer one more route inside what exists over a new service, domain, container or dependency. Cost counts both money and operating effort: without numbers, the smallest surface wins; with numbers for both, the lowest total cost wins.
+- **Why:** Every dependency and every new surface is something more to operate, secure and maintain, plus an exit cost. A small team cannot pay for complexity it does not use. Money shows up on an invoice and operating effort does not, so a choice that compares only money tends to pick the self-run option and pay later in operation. In one production agent loop, the only two real reversals in 901 commits were caused by money, and the self-hosted runner chosen to save it stopped continuous integration three times.
 - **Applies when:** always.
 - **Sources:** Dan McKinley, *Choose Boring Technology* (2015).
 
@@ -44,9 +44,3 @@ Open this file when the decision is whether to add a dependency, an abstraction,
 - **Applies when:** always.
 - **Sources:** Taiichi Ohno, five whys, Toyota Production System.
 
-## Operating cost is a real constraint
-
-- **Statement:** Money and paid continuous-integration minutes count as a constraint when choosing between options.
-- **Why:** In one production agent loop, the only two real reversals in 901 commits were caused by cost.
-- **Applies when:** an option has a recurring cost. Conflicts with the smallest-new-surface principle, see `open-conflicts.md`.
-- **Sources:** practice.

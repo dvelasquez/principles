@@ -2,14 +2,6 @@
 
 Open this file when a decision touches two principles that point in different directions. Every entry here is **unresolved**. An agent that hits one of them escalates to the human with the question and both positions. It does not pick a side.
 
-## Conflicts between principles
-
-### Operating cost versus smallest surface
-
-- **Position A, Operating cost is a real constraint:** if the managed option costs money, prefer the own option or the one that does not spend paid minutes.
-- **Position B, Use the platform, choose boring technology: the smallest new surface wins:** the smallest new surface wins; a self-hosted runner is a surface to operate. In one production agent loop, the self-hosted runner stopped continuous integration three times.
-- **Status:** unresolved; an agent escalates and does not pick a side.
-
 ## Parameter differences under one principle
 
 ### Threshold for sharing logic, under You Aren't Gonna Need It
