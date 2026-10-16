@@ -39,9 +39,9 @@ Open this file when the decision is about escalating, scope, ticket state, retri
 
 ## Closed scope and a declared blast radius
 
-- **Statement:** Build exactly what was asked. The ticket names what the change does not touch. Leaving that boundary is an acknowledged scope expansion, never absorbed silently.
-- **Why:** Scope that grows without agreement produces work nobody validated and mixes what was asked with what was invented. Without a merge gate, the scope judgment has to happen in the implementing session.
-- **Applies when:** always. Tolerance for mechanical expansion is an open parameter difference, see `open-conflicts.md`.
+- **Statement:** Build exactly what was asked. The ticket names what the change does not touch. Leaving that boundary is an acknowledged scope expansion, never absorbed silently. A correction to what was asked, such as review feedback, enters the open pull request. A small, mechanical, same-layer change needed to complete the ask enters the pull request and is noted in its description. An improvement not needed for the ask goes to the report, not the code. A change that alters a business decision escalates.
+- **Why:** Scope that grows without agreement produces work nobody validated and mixes what was asked with what was invented. Without a merge gate, the scope judgment has to happen in the implementing session. A change needed to complete the ask has an obvious answer; a change to a business decision has none, so it belongs to the human.
+- **Applies when:** always.
 - **Sources:** practice.
 
 ## The working document states the current truth
