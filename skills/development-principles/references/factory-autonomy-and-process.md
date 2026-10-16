@@ -18,16 +18,16 @@ Open this file when the decision is about escalating, scope, ticket state, retri
 
 ## Receipts by consequence instead of prior permission
 
-- **Statement:** Protection comes from reversibility, a visual receipt of what changed, and later correction. A receipt is issued when there is a consequence.
-- **Why:** Filtering by touched area filters nothing, and the operator processes visuals but not text that arrives at a bad moment.
-- **Applies when:** agents ship changes without prior human approval. Conflicts with the next principle, see `open-conflicts.md`.
+- **Statement:** Safety comes from reversibility and from checks that run without a reader. A visual receipt of what changed is issued when there is a consequence. Nobody is obliged to read it: it serves to find and correct what changed once a problem appears, and to measure where agents get things wrong.
+- **Why:** Filtering by touched area filters nothing, and the operator processes visuals but not text that arrives at a bad moment. A receipt counted as protection fails silently when nobody reads it.
+- **Applies when:** agents ship changes without prior human approval.
 - **Sources:** practice.
 
 ## Safety does not depend on a human reading
 
-- **Statement:** Human review concentrates where measured confidence is low. When choosing between reinforcing review and reinforcing ticket refinement, reinforce refinement.
+- **Statement:** No process relies on a human reading something to be safe. When choosing between reinforcing review and reinforcing ticket refinement, reinforce refinement. Human review concentrates where measured confidence is low.
 - **Why:** The operator approved without reading, and a high global average can hide a part of the process with low confidence. When a well-defined ticket is the only human input, a vague ticket wastes whole machine cycles.
-- **Applies when:** agents develop without supervision.
+- **Applies when:** agents develop without supervision. The clause on focused human review is dormant until the project has a named measurement of confidence per part of the process; without it, nobody knows where confidence is low.
 - **Sources:** practice.
 
 ## No agent widens its own autonomy rules

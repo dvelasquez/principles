@@ -4,12 +4,6 @@ Open this file when a decision touches two principles that point in different di
 
 ## Conflicts between principles
 
-### Receipts versus human reading
-
-- **Position A, Receipts by consequence instead of prior permission:** protection comes from reversibility, a visual receipt and later correction; the receipt is triggered by consequence.
-- **Position B, Safety does not depend on a human reading:** a process whose safety depends on the operator reading something is already broken; reading concentrates where measured confidence is low.
-- **Status:** unresolved; an agent escalates and does not pick a side.
-
 ### Operating cost versus smallest surface
 
 - **Position A, Operating cost is a real constraint:** if the managed option costs money, prefer the own option or the one that does not spend paid minutes.
