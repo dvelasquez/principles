@@ -20,7 +20,8 @@ Open this file when the decision is whether to add a dependency, an abstraction,
 
 - **Statement:** Build for the case that exists. A shared abstraction, a seam or a configuration value is born only when the variation is real, concrete and near. If the change and its arrival cannot be named, preparing for it is speculation. A piece that already runs in more than one project has its second case: when it is touched for any reason, its hard-coded values move to configuration, with a default equal to the current value.
 - **Why:** Speculative infrastructure costs today and rarely pays. A premature abstraction fixes the wrong shape and hides defects that the first future user pays for. Preparation for a named change pays without discussion, and moving values when a shared piece is touched stops portability debt from growing without a large project.
-- **Applies when:** always. The threshold for "real" is an open parameter difference, see `open-conflicts.md`.
+- **Applies when:** always.
+- **Default thresholds:** infrastructure that chooses between variants, such as a selector, a registry or configuration, is born with the second real case, because the variation then exists. Repeated code is extracted into a shared function at its third real use, because two copies do not yet show which part is common and which is coincidence (rule of three). Each project enforces its thresholds as rules.
 - **Sources:** Kent Beck and Ron Jeffries, Extreme Programming; Martin Fowler, *Refactoring* (rule of three); Michael Feathers, seams; Robert C. Martin, the Boy Scout Rule; *The Twelve-Factor App*, configuration.
 
 ## Cheap and reversible first, structural later

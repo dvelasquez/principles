@@ -4,12 +4,6 @@ Open this file when a decision touches two principles that point in different di
 
 ## Parameter differences under one principle
 
-### Threshold for sharing logic, under You Aren't Gonna Need It
-
-- **Position A:** a registry or selector only with a second real case.
-- **Position B:** logic is not shared until its third real use.
-- **Status:** unresolved; an agent escalates and does not pick a side. Both positions agree that a shared abstraction is born with its first consumer.
-
 ### Tolerance for scope expansion, under Closed scope
 
 - **Position A:** build exactly what was asked; what adds scope goes to the report.
